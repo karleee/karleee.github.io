@@ -17,14 +17,6 @@
 
   "use strict";
 
-  /*
-  ----------------------------------------------------------------------
-
-    Config
-
-  ----------------------------------------------------------------------
-  */
-
   var MATH_PROPS = 'E LN10 LN2 LOG2E LOG10E PI SQRT1_2 SQRT2 abs acos asin atan ceil cos exp floor log round sin sqrt tan atan2 pow max min'.split(' ');
   var HAS_SKETCH = '__hasSketch';
   var M = Math;
@@ -65,13 +57,7 @@
     40: 'DOWN'
   };
 
-  /*
-  ----------------------------------------------------------------------
-
-    Utilities
-
-  ----------------------------------------------------------------------
-  */
+  /* Utility functions */
 
   function isArray(object) {
     return Object.prototype.toString.call(object) == '[object Array]';
@@ -120,14 +106,6 @@
 
     return object;
   }
-
-  /*
-  ----------------------------------------------------------------------
-
-    Constructor
-
-  ----------------------------------------------------------------------
-  */
 
   function constructor(context) {
 
@@ -244,7 +222,6 @@
         // Post draw
 
         if (is2D && context.retina)
-
           context.restore();
       }
 
@@ -252,7 +229,6 @@
     }
 
     function resize() {
-
       target = isDiv ? context.style : context.canvas;
       suffix = isDiv ? 'px' : '';
 
@@ -260,13 +236,11 @@
       h = context.height;
 
       if (context.fullscreen) {
-
         h = context.height = win.innerHeight;
         w = context.width = win.innerWidth;
       }
 
       if (context.retina && is2D && ratio) {
-
         target.style.height = h + 'px';
         target.style.width = w + 'px';
 
@@ -290,17 +264,13 @@
     }
 
     function align(touch, target) {
-
       bounds = target.getBoundingClientRect();
-
       touch.x = touch.pageX - bounds.left - (win.scrollX || win.pageXOffset);
       touch.y = touch.pageY - bounds.top - (win.scrollY || win.pageYOffset);
-
       return touch;
     }
 
     function augment(touch, target) {
-
       align(touch, context.element);
 
       target = target || {};
@@ -449,14 +419,6 @@
     return (context.autostart && start(), bind(true), resize(), update(), context);
   }
 
-  /*
-  ----------------------------------------------------------------------
-
-    Global API
-
-  ----------------------------------------------------------------------
-  */
-
   var element, context, Sketch = {
 
     CANVAS: CANVAS,
@@ -553,14 +515,6 @@
     }
   };
 
-  /*
-  ----------------------------------------------------------------------
-
-    Shims
-
-  ----------------------------------------------------------------------
-  */
-
   var vendors = ['ms', 'moz', 'webkit', 'o'];
   var scope = self;
   var then = 0;
@@ -593,14 +547,6 @@
   scope[c] = cAF = cAF || function (id) {
     clearTimeout(id);
   };
-
-  /*
-  ----------------------------------------------------------------------
-
-    Output
-
-  ----------------------------------------------------------------------
-  */
 
   return Sketch;
 
