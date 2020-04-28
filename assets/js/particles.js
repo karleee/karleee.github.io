@@ -39,7 +39,7 @@ Particle.prototype = {
 };
 
 // Drawing particles
-var MAX_PARTICLES = 290;
+var MAX_PARTICLES = 250;
 var COLORS = ['#F24162', '#04C4D9', '#04BF55', '#AAE6E6', '#FF9C31', '#FF81A5', '#CA88CC'];
 
 // Initializing variables to hold particles and pool
