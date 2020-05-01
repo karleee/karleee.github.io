@@ -46,6 +46,7 @@ body {
 .projects.nav-wrapper ul li a:hover {
   background: var(--light-mango);
   transition: background 0.3s;
+  cursor: pointer;
 }
 
 /* Projects header styling */

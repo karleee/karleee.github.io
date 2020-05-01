@@ -51,6 +51,7 @@
 .resume.nav-container ul li a:hover {
   background: var(--light-mango);
   transition: background 0.3s;
+  cursor: pointer;
 }
 
 /* Resume download styling */
@@ -64,7 +65,7 @@ button {
   background: gold;
 }
 
-.download-container button:hover {
+button:hover {
   cursor: pointer;
 }
 
