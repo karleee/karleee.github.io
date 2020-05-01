@@ -36,12 +36,10 @@ body {
 }
 
 .projects.nav-wrapper ul li a {
+  display: inline-block;
+  width: 100%;
+  padding: 0 5%;
   color: var(--gray);
-}
-
-.projects.nav-wrapper ul li a:first-of-type {
-  box-sizing: border-box;
-  padding-right: 1em;
   text-decoration: none;
 }
 
