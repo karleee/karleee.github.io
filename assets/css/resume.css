@@ -41,12 +41,10 @@
 }
 
 .resume.nav-container ul li a {
+  display: inline-block;
+  width: 100%;
+  padding: 0 5%;
   color: var(--gray);
-}
-
-.resume.nav-container ul li a:first-of-type {
-  box-sizing: border-box;
-  padding-right: 1em;
   text-decoration: none;
 }
 
@@ -200,7 +198,7 @@ button {
   flex-wrap: wrap;
   font-family: 'proximaNovaSemiBold';
   font-size: 1.1em;
-  color: var(--gray);
+  color: var(--gray); 
 }
 
 .job-container {
@@ -324,8 +322,8 @@ button {
 
   .contact-wrapper {
     width: 100%;
-    margin-top: 8%;
-  }
+    margin-top: 20%;
+  } 
 
   .resume.contact-wrapper ul {
     display: flex;
@@ -354,8 +352,14 @@ button {
 
   .resume.skills-container p,
   .courses-container p {
-    line-height: 1.6;
+    line-height: 1.5;
   }
+
+  /* Work exp styling */
+
+  /* .job-header-wrapper h3 {
+    margin: 0;
+  } */
 
   button {
     font-family: 'proximaNovaBold';
