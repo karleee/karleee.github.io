@@ -82,10 +82,10 @@ button:hover {
 }
 
 .title-wrapper {
-  box-sizing: border-box;
-  padding: 2% 1.5%;
-  border: 2px solid var(--gray);
-  box-shadow: 5px 5px 0 0.5px gold;
+  /* box-sizing: border-box; */
+  /* padding: 2% 1.5%; */
+  /* border: 2px solid var(--gray);
+  box-shadow: 5px 5px 0 0.5px gold; */
   width: 20%;
   min-width: 180px;
 }
@@ -171,10 +171,10 @@ button:hover {
   box-shadow: 5px 5px 0 0.5px gold;
 }
 
-.underline-wrapper {
+/* .underline-wrapper {
   width: 82%;
   border-top: 3px solid var(--mid-gray);
-}
+} */
 
 .resume.skills-container p,
 .courses-container p {
