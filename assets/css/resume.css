@@ -66,6 +66,7 @@ button {
 }
 
 button:hover {
+  background: var(--light-mango);
   cursor: pointer;
 }
 
@@ -132,6 +133,11 @@ button:hover {
   align-items: center;
   color: var(--mid-gray);
   text-decoration: none;
+}
+
+.resume.contact-wrapper ul li a:hover {
+  background: var(--light-mango);
+  cursor: pointer;
 }
 
 .icon-wrapper {
