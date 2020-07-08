@@ -82,6 +82,14 @@ button:hover {
 }
 
 .title-wrapper {
+<<<<<<< HEAD
+=======
+  width: 20%;
+  min-width: 180px;
+}
+
+.title-text-wrapper {
+>>>>>>> d7f2cb056226884726e6cf67ee9816812c34339b
   display: flex;
   flex-direction: column;
   justify-content: center;
