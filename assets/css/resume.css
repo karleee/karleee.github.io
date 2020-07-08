@@ -83,10 +83,6 @@ button:hover {
 }
 
 .title-wrapper {
-  /* box-sizing: border-box; */
-  /* padding: 2% 1.5%; */
-  /* border: 2px solid var(--gray);
-  box-shadow: 5px 5px 0 0.5px gold; */
   width: 20%;
   min-width: 180px;
 }
@@ -203,24 +199,23 @@ button:hover {
   color: var(--gray); 
 }
 
-.job-container {
+.job-container, .description-container {
   font-family: 'proximaNovaReg';
+}
+
+.job-container {
   box-sizing: border-box;
   padding: 1em 0;
 }
 
-.UCSC.job-container {
-  padding-top: 0;
-}
-
-.job-container h3:first-of-type,
+.job-header-wrapper h3:first-of-type,
 .school-wrapper h3:first-of-type {
   background: var(--light-mango);
   box-sizing: border-box;
   padding: 0.25em;
 }
 
-.job-container p,
+.job-header-wrapper p,
 .school-wrapper p {
   box-sizing: border-box;
   padding: 0 0.25em;
