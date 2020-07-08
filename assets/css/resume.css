@@ -78,29 +78,24 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  box-sizing: border-box;
-  padding: 10% 0 5% 0;
+  margin: 10% 0 5% 0;
 }
 
 .title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'proximaNovaBold';
   width: 20%;
   min-width: 180px;
 }
 
-.title-text-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.title-text-wrapper h1 {
-  font-family: 'proximaNovaBold';
+.title-wrapper h1 {
   font-size: 2em;
   color: var(--gray);
 }
 
-.title-text-wrapper h2 {
-  font-family: 'proximaNovaBold';
+.title-wrapper h2 {
   font-size: 1em;
   color: var(--mid-gray);
 }
@@ -201,8 +196,6 @@ button:hover {
 
 .job-container, .description-container {
   font-family: 'proximaNovaReg';
-  /* box-sizing: border-box;
-  padding: 1em 0; */
 }
 
 .job-container {
@@ -249,11 +242,11 @@ button:hover {
     font-size: calc(15px + 5 * ((100vw - 320px) / 680));
   }
 
-  .title-text-wrapper  h1 { 
+  .title-wrapper  h1 { 
     font-size: calc(26px + 6 * ((100vw - 320px) / 680));
   } 
 
-  .title-text-wrapper  h2 {
+  .title-wrapper  h2 {
     font-size: calc(10px + 6 * ((100vw - 320px) / 680)); 
   }
 
@@ -282,11 +275,11 @@ button:hover {
     font-size: 20px;
   }
 
-  .title-text-wrapper  h1 {
+  .title-wrapper  h1 {
     font-size: 32px;
   }
 
-  .title-text-wrapper  h2,
+  .title-wrapper  h2,
   .contact-wrapper ul li {
     font-size: 16px;
   }
