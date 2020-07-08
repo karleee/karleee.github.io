@@ -102,8 +102,6 @@ button:hover {
 
 .contact-wrapper {
   width: 65%;
-  /* margin: 0; */
-  /* height: 100%; */
 }
 
 .resume.contact-wrapper ul {
@@ -251,8 +249,8 @@ button:hover {
     font-size: calc(10px + 6 * ((100vw - 320px) / 680)); 
   }
 
-  .contact-wrapper ul li {
-    font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+  .contact-wrapper ul li a {
+    font-size: calc(10px + 8 * ((100vw - 320px) / 680));
   }
 
   .resume.skills-container p,
@@ -281,7 +279,7 @@ button:hover {
   }
 
   .title-wrapper  h2,
-  .contact-wrapper ul li {
+  .contact-wrapper ul li a {
     font-size: 16px;
   }
 
@@ -315,18 +313,14 @@ button:hover {
 
   .contact-wrapper {
     width: 100%;
-    margin: 10% 0;
+    margin: 5% 0;
   } 
 
-  .resume.contact-wrapper ul {
+  .contact-wrapper ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-  }
-
-  .resume.contact-wrapper ul li {
-    margin-bottom: 2%;
   }
 
   .resume.contact-wrapper ul li:last-of-type {
@@ -353,10 +347,6 @@ button:hover {
   }
 
   /* Work exp styling */
-
-  /* .job-header-wrapper h3 {
-    margin: 0;
-  } */
 
   button {
     font-family: 'proximaNovaBold';
