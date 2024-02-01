@@ -1,77 +1,178 @@
 @import 'variables.css';
 
 body {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	background: gold;
+	padding: 3vw 18vw;
 }
 
-/* Home background styling */
- 
-#container {
+.HomeLogo {
+	font-family: 'proximaNovaReg';
+	font-size: 1.2vw;
+	letter-spacing: 0.1vw;
+}
+
+.HomeHeader-introduction {
+	font-family: 'proximaNovaSemibold';
+	margin-top: 9vw;
+	font-size: 4.2vw;
+}
+
+.HomeHeader-introduction-design, .HomeHeader-introduction-bake, .HomeHeader-introduction-travel {
+	-webkit-text-stroke-width: 0.08vw;
+	-webkit-text-stroke-color: black;
+	color: white;
+}
+
+.HomeHeader-introduction-design:hover {
+	color: var(--light-green);
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎨</text></svg>") 16 0, auto;
+}
+
+.HomeHeader-introduction-bake:hover {
+	color: var(--light-pink);
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍰</text></svg>") 16 0, auto;
+}
+
+.HomeHeader-introduction-travel:hover {
+	color: var(--light-blue);
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>✈️</text></svg>") 16 0, auto;
+}
+
+.HomeHeader-blurb {
+	font-family: 'proximaNovaLight';
+	font-size: 1.2vw;
+	line-height: 1.8;
+	margin-top: 2vw;
+}
+
+.HomeWorkHeader {
+	color: var(--light-gray);
+	font-family: 'proximaNovaReg';
+	font-size: 0.9vw;
+	letter-spacing: 0.1vw;
+	margin-top: 11vw;
+}
+
+.HomeGallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 1.5vw;
+}
+
+.HomeGallery-thumbnail {
+	width: 20vw;
+	height: 20vw;
+	background-color: pink;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	position: relative;
+}
+
+.HomeGallery-text {
 	position: absolute;
-	top: 0;
+	top: 2vw;
+	left: 22vw;
+}
+
+#HomeGallery-gateau.active .HomeGallery-text {
+	animation: fade-in 4s ease;
+}
+
+#HomeGallery-gateau.inactive .HomeGallery-text {
+	opacity: 0;
+}
+
+.HomeGallery-title {
+	font-family: 'proximaNovaBold';
+	font-size: 3vw;
+}
+
+.HomeGallery-description {
+	font-family: 'proximaNovaLight';
+	font-size: 1.5vw;
+	margin-top: 1vw;
+}
+
+.HomeGallery-button {
+	font-family: 'proximaNovaSemibold';
+	font-size: 1.5vw;
+	background-color: white;
+	margin-top: 2vw;
+}
+
+.HomeGallery-button:hover {
+	cursor: pointer;
+	color: var(--blue);
+}
+
+.HomeGallery-gateauImage {
+	content: url('../../images/projects/castle.jpg');
+	width: 100%;
+	height: 100%;
+}
+
+.HomeGallery-thumbnail:hover {
+	cursor: pointer;
+}
+
+.HomeGallery-thumbnail:hover .HomeGallery-gateauGif {
+	content: url('../../images/projects/castle.gif');
+	position: absolute;
+	top: -4vw;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 1;
 }
 
-/* Home header styling */
-
-.home.main-container {
-	/* display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	background: red; */
-	/* width: 100%;
-	height: 100%; */
-	/* overflow: hidden; */
+#HomeGallery-gateau.active {
+	animation: expand 0.5s ease;
+	width: 40vw;
+	background: white;
+	border: 1px solid black;
 }
 
-.home.header-wrapper {
-	/* position: relative; */
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: var(--gray);
-	width: 13em;
-	height: 13em;
-	background: white; 
-	z-index: 2;
+#HomeGallery-gateau.inactive {
+	animation: unexpand 0.5s ease;
+	background: white;
+	width: 20vw;
+	border: 1px solid black;
 }
 
-.home.header-wrapper p {
-	font-family: 'proximaNovaSemiBold';
-	font-size: 1em;
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
-.home.header-wrapper ul {
-	font-family: 'proximaNovaReg';
-	font-size: 1em;
-	font-weight: 700;
-	list-style: none;
-	box-sizing: border-box;
-	padding: 1em 0;
+@keyframes fade-out {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
 }
 
-.home.header-wrapper ul li {
-	box-sizing: border-box;
-	margin: 0.6em 0;
+@keyframes expand {
+	0% {
+		width: 20vw;
+	}
+
+	100% {
+		width: 40vw;
+	}
 }
 
-.home.header-wrapper ul li a {
-	text-decoration: none;
-	color: var(--mid-gray);
-	border-bottom: 3px solid gold;
-}
+@keyframes unexpand {
+	0% {
+		width: 40vw;
+	}
 
-.home.header-wrapper ul a:hover {
-  border-bottom: 3px solid var(--light-mango);
-	transition: border-bottom 0.3s;
-	cursor: pointer;
+	100% {
+		width: 20vw;
+	}
 }

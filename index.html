@@ -7,22 +7,44 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+		<script type="text/javascript" src="assets/js/projects.js"></script>
 		<link rel="stylesheet" href="assets/css/reset.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 
 	<body>
-		<div id="container"></div>
+			<div class="HomeLogo">
+				<p>KAREN LEE</p>
+			</div>
+			<div class="HomeHeader">
+				<div class="HomeHeader-introduction">
+					<p>Hi, I'm Karen!</p>
+					<p>I <span class="HomeHeader-introduction-design">design</span>, <span class="HomeHeader-introduction-bake">bake</span>, and <span class="HomeHeader-introduction-travel">travel</span>.</p>
+				</div>
+				<p class="HomeHeader-blurb">I'm a product designer and front-end engineer based in the Bay Area with experience in delivering end-to-end UX/UI design for software products. I'm passionate about improving the lives of others through design and am constantly looking to learn new things everyday.</p>
+			</div>
 
-		<div class="home header-wrapper">
-		  <p>I'm Karen!</p>
-		  <ul>
-		  	<li><a href="http://karleee.com/projects">projects</a></li>
-		  	<li><a href="http://karleee.com/resume">resume</a></li>
-			</ul>
-		</div>
+			<p class="HomeWorkHeader">MY WORK</p>
 
-			<script src="assets/js/sketch.js"></script>
-			<script src="assets/js/particles.js"></script>
+			<div class="HomeGallery">
+				<div class="HomeGallery-thumbnail" id="HomeGallery-gateau" onclick="toggleExpansion(event, this.id)"">
+					<div class="HomeGallery-thumbnail">
+						<div class="HomeGallery-gateauImage"></div>
+						<div class="HomeGallery-gateauGif"></div>
+					</div>
+					<div class="HomeGallery-text">
+						<p class="HomeGallery-title">Gâteau</p>
+						<p class="HomeGallery-description">Designing a wedding<br />cake finder app fit for royalty</p>
+						<a href="http://karleee.com/gateau">
+							<button class="HomeGallery-button">See more ></button>
+						</a>
+					</div>
+				</div>
+				<div class="HomeGallery-thumbnail"></div>
+			</div>
+
+			<!-- Particle mouse trails -->
+			<!-- <script src="assets/js/sketch.js"></script>
+			<script src="assets/js/particles.js"></script> -->
 	</body>
 </html>

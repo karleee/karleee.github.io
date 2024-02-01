@@ -1,0 +1,11 @@
+@import 'variables.css';
+
+body {
+  padding: 3vw 18vw;
+}
+
+.HomeLogo {
+  font-family: 'proximaNovaReg';
+  font-size: 1.2vw;
+  letter-spacing: 0.1vw;
+}

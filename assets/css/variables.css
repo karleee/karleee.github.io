@@ -41,9 +41,11 @@
 }
 
 :root {
-  /* Primary colors */
+  --blue: #7AACBF;
   --gray: #333333;
   --mid-gray: #474747;
   --light-gray: #999999;
-  --light-mango: #FFF4A8;
+  --light-blue: #C2DAFF;
+  --light-green: #EEFFB5;
+  --light-pink: #DB8FFF;
 }
