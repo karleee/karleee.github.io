@@ -24,17 +24,17 @@ body {
 
 .HomeHeader-introduction-design:hover {
 	color: var(--light-green);
-	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎨</text></svg>") 16 0, auto;
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🎨</text></svg>") 16 0, auto;
 }
 
 .HomeHeader-introduction-bake:hover {
 	color: var(--light-pink);
-	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍰</text></svg>") 16 0, auto;
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🍰</text></svg>") 16 0, auto;
 }
 
 .HomeHeader-introduction-travel:hover {
 	color: var(--light-blue);
-	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>✈️</text></svg>") 16 0, auto;
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>✈️</text></svg>") 16 0, auto;
 }
 
 .HomeHeader-blurb {
@@ -73,11 +73,13 @@ body {
 	left: 22vw;
 }
 
-#HomeGallery-gateau.active .HomeGallery-text {
+#HomeGallery-gateau.active .HomeGallery-text,
+#HomeGallery-booVoyage.active .HomeGallery-text {
 	animation: fade-in 4s ease;
 }
 
-#HomeGallery-gateau.inactive .HomeGallery-text {
+#HomeGallery-gateau.inactive .HomeGallery-text,
+#HomeGallery-booVoyage.inactive .HomeGallery-text {
 	opacity: 0;
 }
 
@@ -90,22 +92,30 @@ body {
 	font-family: 'proximaNovaLight';
 	font-size: 1.5vw;
 	margin-top: 1vw;
+	margin-bottom: 1vw;
 }
 
-.HomeGallery-button {
+.SeeMore {
 	font-family: 'proximaNovaSemibold';
 	font-size: 1.5vw;
 	background-color: white;
-	margin-top: 2vw;
+	color: black;
+	text-decoration: none;
 }
 
-.HomeGallery-button:hover {
+.SeeMore:hover {
 	cursor: pointer;
 	color: var(--blue);
 }
 
 .HomeGallery-gateauImage {
 	content: url('../../images/projects/castle.jpg');
+	width: 100%;
+	height: 100%;
+}
+
+.HomeGallery-booVoyageImage {
+	content: url('../../images/projects/ghost.jpg');
 	width: 100%;
 	height: 100%;
 }
@@ -123,14 +133,25 @@ body {
 	height: 100%;
 }
 
-#HomeGallery-gateau.active {
+.HomeGallery-thumbnail:hover .HomeGallery-booVoyageGif {
+	content: url('../../images/projects/ghost.gif');
+	position: absolute;
+	top: -1.5vw;
+	left: 3vw;
+	width: 60%;
+	height: 60%;
+}
+
+#HomeGallery-gateau.active,
+#HomeGallery-booVoyage.active {
 	animation: expand 0.5s ease;
 	width: 40vw;
 	background: white;
 	border: 1px solid black;
 }
 
-#HomeGallery-gateau.inactive {
+#HomeGallery-gateau.inactive,
+#HomeGallery-booVoyage.inactive {
 	animation: unexpand 0.5s ease;
 	background: white;
 	width: 20vw;

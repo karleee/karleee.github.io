@@ -1,11 +1,20 @@
 @import 'variables.css';
 
 body {
-  padding: 3vw 18vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  overflow-x: hidden;
 }
 
-.HomeLogo {
-  font-family: 'proximaNovaReg';
+.GateauIntroduction-dates {
   font-size: 1.2vw;
+  font-family: 'proximaNovaLight';
+  line-height: 1.8;
+  margin-top: 2vw;
+}
+
+.GateauBackground-header {
+  font-family: 'proximaNovaSemibold';
+  color: var(--mid-gray);
   letter-spacing: 0.1vw;
 }

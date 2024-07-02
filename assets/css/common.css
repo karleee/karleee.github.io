@@ -1,0 +1,167 @@
+.Banner {
+  width: 100%;
+  height: 36vw;
+  margin-top: 5vw;
+  overflow: hidden;
+}
+
+.Bold {
+  font-family: 'proximaNovaSemibold';
+}
+
+.Nav {
+  font-family: 'proximaNovaReg';
+  font-size: 1.2vw;
+  letter-spacing: 0.05vw;
+  color: black;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  padding: 0.17vw 0;
+}
+
+.Nav::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.18vw;
+  border-radius: 5px;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.Nav:hover::after,
+.Nav:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+.List {
+  padding-left: 3vw;
+}
+
+.Navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+
+.Quote-Author {
+  font-family: 'proximaNovaLight';
+  font-size: 1.2vw;
+  margin-top: 0.5vw;
+}
+
+.Quote-Text {
+  font-family: 'proximaNovaSemibold';
+  font-size: 2.3vw;
+}
+
+.Screen {
+  width: 20vw;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.15);
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Section {
+  padding-left: 18vw;
+  padding-right: 18vw;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  margin-top: 4vw;
+}
+
+.Section-Body {
+  font-size: 1.2vw;
+  line-height: 1.8;
+  font-family: 'proximaNovaLight';
+  margin-top: 1vw;
+}
+
+.Sketches {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1vw;
+  row-gap: 1vw
+}
+
+.Sketch {
+  width: 31.5vw;
+}
+
+.Title {
+  font-family: 'proximaNovaSemibold';
+  font-size: 4vw;
+  margin-top: 10vw;
+  padding-left: 18vw;
+  padding-right: 18vw;
+}
+
+.Introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5vw;
+  padding-left: 18vw;
+  padding-right: 18vw;
+}
+
+.Overview,
+.Role {
+  width: 27vw;
+}
+
+.Section-Header {
+  font-family: 'proximaNovaSemibold';
+  color: var(--mid-gray);
+  letter-spacing: 0.1vw;
+}
+
+.Overview-Body {
+  font-size: 1.2vw;
+  font-family: 'proximaNovaLight';
+  line-height: 2;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+}
+
+.Prototype {
+  text-decoration: none;
+  font-family: 'proximaNovaReg';
+  font-size: 1.2vw;
+  border: 0.1vw solid black;
+  padding: 0.5vw 0.7vw;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  display: inline-block;
+}
+
+.Prototype:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.Prototype-HoverEffect {
+  opacity: 0;
+}
+
+.Prototype:hover > .Prototype-HoverEffect {
+  opacity: 1;
+  content: url('../../images/projects/sparkle.gif');
+  position: absolute;
+  top: -2.2vw;
+  left: -2.8vw;
+  width: 168%;
+}

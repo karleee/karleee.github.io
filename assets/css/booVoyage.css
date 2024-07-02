@@ -1,0 +1,41 @@
+.Banner-Image {
+  width: 100%;
+  content: url('../../images/projects/BooVoyageBanner.png');
+}
+
+.Navigation {
+  padding: 0 18vw;
+  box-sizing: border-box;
+}
+
+.Screen-Home {
+  content: url('../../images/projects/BooVoyage-homeScreen.png');
+}
+
+.Screen-SearchResults {
+  content: url('../../images/projects/BooVoyage-searchResultsScreen.png');
+}
+
+.Screen-Rental {
+  content: url('../../images/projects/BooVoyage-rentalScreen.png');
+}
+
+.Screen-Filter {
+  content: url('../../images/projects/BooVoyage-filter.png');
+}
+
+.Section-Color {
+  background-color: rgba(186, 184, 211, 0.3);
+}
+
+.Sketch-ProjectBrief {
+  content: url('../../images/projects/BooVoyage-projectBrief.png');
+}
+
+.Sketch-Flow {
+  content: url('../../images/projects/BooVoyage-flow.png');
+}
+
+.Sketch-Wireframes {
+  content: url('../../images/projects/BooVoyage-wireframes.png');
+}

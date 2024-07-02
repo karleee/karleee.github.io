@@ -6,208 +6,174 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/common.css" />
   <link rel="stylesheet" href="assets/css/resume.css" />
 </head>
 <body>
   <div class="resume main-container">
-    <div class="resume nav-container">
-      <ul>
-        <li><a href="http://karleee.com/">Home</a></li>
-        <li><a href="http://karleee.com/projects">Projects</a></li>
-      </ul>
-
-      <a href="./images/resume/Karen_Lee_Resume.pdf" target="_blank"><button>Download</button></a>
+    <div class="Navigation">
+      <a href="index.html" class="Nav Nav-Home">Home</a>
+      <a href="resume.html" class="Nav Nav-Resume">Resume</a>
     </div>
 
-    <div class="resume header-container">
-      <div class="resume title-wrapper">
-        <h1>Karen Lee</h1>
-        <h2>Frontend Engineer & Designer</h2>
-      </div>
-
-      <div class="resume contact-wrapper">
-        <ul>
-          <li>
-            <a href="https://github.com/karleee" target="_blank">
-              Github
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.linkedin.com/in/karleee/" target="_blank">
-              LinkedIn
-            </a>
-          </li>
-
-          <li>
-            <a href="mailto:karleee@protonmail.com" target="_blank">
-              karleee@protonmail.com
-            </a>
-          </li>
-        </ul>
-      </div>
+    <div class="Resume-Title">
+      <p class="Resume-Name">Karen Lee</p>
+      <p class="Resume-Occupation">Frontend Engineer & Designer</p>
     </div>
 
-    <div class="resume skills-container">
-      <div class="resume headliner-wrapper">
-        <h2>Skills</h2>
-      </div>
-
-      <p>Javascript, TypeScript, React, Redux, HTML, CSS, Adobe Illustrator, Adobe Photoshop, Figma</p>
+    <div class="Resume-Contact">
+      <a class="Contact-Link" href="https://github.com/karleee" target="_blank">
+        <img src="/images/logos/github.png" alt="Github icon" width="30">
+      </a>
+      <a class="Contact-Link" href="https://www.linkedin.com/in/karleee/" target="_blank">
+        <img src="/images/logos/linkedIn.png" alt="LinkedIn icon" width="30">
+      </a>
+      <a href="mailto:karleee@protonmail.com" target="_blank">
+        <img src="/images/logos/protonMail.png" alt="LinkedIn icon" width="30">
+      </a>
     </div>
 
-    <div class="resume experience-container">
-      <div class="resume headliner-wrapper">
-        <h2>Experience</h2>
-      </div>
+    <div class="Resume-Section">
+      <p class="Resume-SectionTitle Section-Header">SKILLS</p>
+      <p class="Section-Body">Javascript, TypeScript, React, Redux, HTML, CSS, Adobe Illustrator, Adobe Photoshop, Figma</p>
+    </div>
+
+    <div class="Resume-Section">
+      <p class="Resume-SectionTitle Section-Header">EXPERIENCE</p>
 
       <div class="resume job-container">
-        <div class="resume job-header-wrapper">
-          <h3>Software Engineer</h3>
-          <p>•</p>
-          <h3>Box</h3>
-          <p>•</p>
-          <h3>2021 - present</h3>
-          <p>•</p>
-          <h3>Redwood City, CA</h3>
+        <div class="Resume-Line">
+          <p class="Resume-Description">Software Engineer</p class="Resume-LineTitle">
+          <p class="Resume-Separator">•</p>
+          <p class="Resume-Description">Box</p>
+          <p class="Resume-Separator">•</p>
+          <p class="Resume-Description">2021 - 2024</p>
+          <p class="Resume-Separator">•</p>
+          <p class="Resume-Description">Redwood City, CA</p>
+          <div class="resume description-container">
+          <p class="Section-Body">- Planned, led, and executed all end to end tests using Cucumber and Gherkin for <a class="Link" href="https://www.box.com/ai">Box AI</a> as a four person team</p>
+          <p class="Section-Body">- Successfully stabilized all end to end tests for Box AI with daily consecutive runs of 100% passing</p>
+          <p class="Section-Body">- Organized efforts to fix longstanding issues with end to end tests for the Preview team, bringing the success rate up to 95% on daily runs</p>
+          <p class="Section-Body">- Fulfilled monthly on call duties using Wavefront to ensure that Box Preview remained a seamless experience for customers at all times of the day</p>
+          <p class="Section-Body">- Performed multiple successful code releases for Box Preview to rollout the newest added features for customers</p>
+          <p class="Section-Body">- Created dynamic reusable components using React and TypeScript (ES6 syntax)</p>
+          <p class="Section-Body">- Reviewed Figma designs and participated in implementation discussions for the web application</p>
+          <p class="Section-Body">- Participated in daily scrum and weekly sprint planning meetings</p>
+        </div>
         </div>
       </div>
 
       <div class="resume job-container">
-        <div class="resume job-header-wrapper">
-          <h3>Associate Software Engineer</h3>
-          <p>•</p>
-          <h3>Tesla</h3>
-          <p>•</p>
-          <h3>2020 - 2021</h3>
-          <p>•</p>
-          <h3>Fremont, CA</h3>
+        <div class="Resume-Line">
+          <p class="Resume-Description">Associate Software Engineer</p>
+          <p class="Resume-Separator">•</p>
+          <p class="Resume-Description">Tesla</p>
+          <p class="Resume-Separator">•</p>
+          <p class="Resume-Description">2020 - 2021</p>
+          <p class="Resume-Separator">•</p>
+          <p class="Resume-Description">Fremont, CA</p>
         </div>
       
         <div class="resume description-container">
-          <p>- Created dynamic reusable components using React Native and TypeScript (ES6 syntax)</p>
-          <p>- Improved styled components by simplifying code structure and using React hooks</p>
-          <p>- Reviewed Figma designs and participated in implementation discussions for both iOS and Android applications</p>
-          <p>- Participated in daily scrum and weekly sprint planning meetings</p>
+          <p class="Section-Body">- Fulfilled monthly on call duties using Wavefront to ensure that Tesla mobile app remained a seamless experience for customers at all times of the day</p>
+          <p class="Section-Body">- Performed multiple successful code releases for the Tesla mobile app to rollout the newest added features for customers</p>
+          <p class="Section-Body">- Improved styled components by simplifying code structure and using React hooks</p>
+          <p class="Section-Body">- Created dynamic reusable components using React Native and TypeScript (ES6 syntax)</p>
+          <p class="Section-Body">- Reviewed Figma designs and participated in implementation discussions for both iOS and Android applications</p>
+          <p class="Section-Body">- Participated in daily scrum and weekly sprint planning meetings</p>
         </div>
       </div>
 
       <div class="resume job-container">
-        <div class="resume job-header-wrapper">
-          <h3>Software Engineer, Full-Stack</h3>
-          <p>•</p>
-          <h3>IMPCT Corporation</h3>
-          <p>•</p>
-          <h3>2020 - 2020</h3>
-          <p>•</p>
-          <h3>San Francisco, CA</h3>
+        <div class="Resume-Line">
+          <p class="Resume-Description">Software Engineer, Full-Stack</p>
+          <p class="Resume-Separator">•</p>
+          <p class="Resume-Description">IMPCT Corporation</p>
+          <p class="Resume-Separator">•</p>
+          <p class="Resume-Description">2020 - 2020</p>
+          <p class="Resume-Separator">•</p>
+          <p class="Resume-Description">San Francisco, CA</p>
         </div>
 
         <div class="resume description-container">
-          <p>- Created interactive Impct trade platform Figma mockups with custom illustrations done in Adobe Illustrator</p>
-          <p>- Used React for Impct trade platform development</p>
+          <p class="Section-Body">- Created interactive Impct trade platform Figma mockups with custom illustrations done in Adobe Illustrator</p>
+          <p class="Section-Body">- Created dynamic reusable components using React for the Impct trade platform</p>
         </div>
       </div>
 
       <div class="resume job-container">
-        <div class="resume job-header-wrapper">
-          <h3>Assistant Web Developer</h3>
-          <p>•</p>
-          <h3>University of California</h3> 
-          <p>•</p>
-          <h3>2018 – 2019</h3>
-          <p>•</p>
-          <h3>Santa Cruz, CA</h3>
+        <div class="Resume-Line">
+          <p class="Resume-Description">Graphic Design Intern</p>
+          <p class="Resume-Separator">•</p>
+          <p class="Resume-Description">Stanford University</p>
+          <p class="Resume-Separator">•</p>
+          <p class="Resume-Description">2015 – 2016</p>
+          <p class="Resume-Separator">•</p>
+          <p class="Resume-Description">Palo Alto, CA</p>
         </div>
 
         <div class="resume description-container">
-          <p>- Implemented university websites and photo gallery widgets using Drupal, WordPress, and Cascade</p>
-          <p>- Created particle effects and cursor animation for website prototypes using vanilla Javascript</p>
-          <p>- Designed wireframes and final mockups for splash pages using WordPress, Adobe Illustrator, Adobe Photoshop, and HTML &
-          CSS</p>
-          <p>- Utilized Jekyll to transform plain HTML & CSS and Markdown into static sites for university event pages</p>
-        </div>
-      </div>
-
-      <div class="resume job-container">
-        <div class="resume job-header-wrapper">
-          <h3>Graphic Design Intern</h3>
-          <p>•</p>
-          <h3>Stanford University</h3>
-          <p>•</p>
-          <h3>2015 – 2016</h3>
-          <p>•</p>
-          <h3>Palo Alto, CA</h3>
-        </div>
-
-        <div class="resume description-container">
-          <p>- Created custom graphics and code for a kiosk application using C on the backend and HTML, CSS, and Adobe Illustrator for
-          the frontend</p>
-          <p>- Produced clean polished graphics for both print and web display using Adobe Illustrator and Adobe Photoshop</p>
-          <p>- Designed wireframes and final mockups for splash pages using WordPress, Adobe Illustrator, Adobe Photoshop, and
-            HTML &
-            CSS</p>
-          <p>- Collaborated with the senior web designer to produce interactive wireframes and mockups using HTML, CSS, and Drupal</p>
-        </div>
-      </div>
-
-      <div class="resume job-container">
-        <div class="resume job-header-wrapper">
-          <h3>Assistant Web Developer</h3>
-          <p>•</p>
-          <h3>California Polytechnic State University</h3>
-          <p>•</p>
-          <h3>2014 – 2015</h3>
-          <p>•</p>
-          <h3>San Luis Obispo, CA</h3>
-        </div>
-
-        <div class="resume description-container">
-          <p>- Created and updated existing websites and webpages for the College of Science and Mathematics using HTML, CSS,
-            and
-            Drupal</p>
-          <p>- Produced clean pixel perfect images by manipulating and creating images using Adobe Illustrator, Adobe
-            Photoshop, HTML,
-            and CSS</p>
+          <p class="Section-Body">- Created a kiosk application with custom graphics using C, HTML, CSS, and Adobe Illustrator</p>
+          <p class="Section-Body">- Produced compositions for both print and web display using Adobe Illustrator and Adobe Photoshop</p>
+          <p class="Section-Body">- Designed wireframes and final mockups for splash pages using WordPress, Adobe Illustrator, Adobe Photoshop, HTML, and CSS</p>
+          <p class="Section-Body">- Collaborated with the senior web designer to produce interactive wireframes and mockups using HTML, CSS, and Drupal</p>
         </div>
       </div>
     </div>
 
-    <div class="resume education-container">
-      <div class="resume headliner-wrapper">
-        <h2>Education</h2>
+    <div class="Resume-Section">
+      <p class="Resume-SectionTitle Section-Header">EDUCATION</p>
+
+      <div class="Resume-School">
+        <p class="Resume-Description">App Academy</p>
+        <p class="Resume-Separator">•</p>
+        <p class="Resume-Description">Bootcamp Graduate</p>
+        <p class="Resume-Separator">•</p>
+        <p class="Resume-Description">2019 – 2020</p>
+        <p class="Resume-Separator">•</p>
+        <p class="Resume-Description">San Francisco, CA</p>
       </div>
 
-      <div class="resume all-schools-wrapper">
-        <div class="resume school-wrapper">
-          <h3>App Academy</h3>
-          <p>•</p>
-          <h3>Bootcamp Graduate</h3>
-          <p>•</p>
-          <h3>2019 – 2020</h3>
-          <p>•</p>
-          <h3>San Francisco, CA</h3>
-        </div>
-
-        <div class="resume school-wrapper">
-          <h3>University of California - Santa Cruz</h3>
-          <p>•</p>
-          <h3>BA: Art & Design: Games and Playable Media</h3>
-          <p>•</p>
-          <h3>2017 – 2019</h3>
-          <p>•</p>
-          <h3>Santa Cruz, CA</h3>
-        </div>
+      <div class="Resume-School">
+        <p class="Resume-Description">University of California - Santa Cruz</p>
+        <p class="Resume-Separator">•</p>
+        <p class="Resume-Description">BA: Art & Design: Games and Playable Media</p>
+        <p class="Resume-Separator">•</p>
+        <p class="Resume-Description">2017 – 2019</p>
+        <p class="Resume-Separator">•</p>
+        <p class="Resume-Description">Santa Cruz, CA</p>
       </div>
     </div>
 
-    <div class="resume courses-container">
-      <div class="resume headliner-wrapper">
-        <h2>Coursework</h2>
-        <!-- <div class="resume underline-wrapper"></div> -->
+    <div class="Resume-Section">
+      <p class="Resume-SectionTitle Section-Header">COURSEWORK</p>     
+      <p class="Section-Body">Fundamentals of Computer Science, Discrete Structures, Human-Centered Design Research, Generative Design, Computer Programming for the Arts</p>
+    </div>
+
+    <div class="Resume-Section">
+      <p class="Resume-SectionTitle Section-Header">CERTIFICATES</p>
+      <div class="Resume-Certificate">
+        <p class="Resume-Description">Visual Elements of User Interface Design</p>
+        <p class="Resume-Separator">•</p>
+        <p class="Resume-Description">California Institute of the Arts</p>
+        <p class="Resume-Separator">•</p>
+        <p class="Resume-Description">Jan 2024</p>
       </div>
-     
-      <p>Fundamentals of Computer Science, Discrete Structures, Human-Centered Design Research, Generative Design, Computer Programming for the Arts</p>
+      <div class="Resume-Certificate">
+        <p class="Resume-Description">HackerRank JavaScript Certification</p>
+        <p class="Resume-Separator">•</p>
+        <p class="Resume-Description">HackerRank</p>
+        <p class="Resume-Separator">•</p>
+        <p class="Resume-Description">May 2020</p>
+      </div>
+      <div class="Resume-Certificate">
+        <p class="Resume-Description">HackerRank React Certification</p>
+        <p class="Resume-Separator">•</p>
+        <p class="Resume-Description">HackerRank</p>
+        <p class="Resume-Separator">•</p>
+        <p class="Resume-Description">May 2020</p>
+      </div>
     </div>
   </div>
 </body>

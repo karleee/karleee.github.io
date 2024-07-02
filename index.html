@@ -9,12 +9,14 @@
 		<meta name="keywords" content="" />
 		<script type="text/javascript" src="assets/js/projects.js"></script>
 		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" href="assets/css/common.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 
 	<body>
-			<div class="HomeLogo">
-				<p>KAREN LEE</p>
+			<div class="Navigation">
+				<a href="index.html" class="Nav Nav-Home">Home</a>
+				<a href="resume.html" class="Nav Nav-Resume">Resume</a>
 			</div>
 			<div class="HomeHeader">
 				<div class="HomeHeader-introduction">
@@ -27,7 +29,7 @@
 			<p class="HomeWorkHeader">MY WORK</p>
 
 			<div class="HomeGallery">
-				<div class="HomeGallery-thumbnail" id="HomeGallery-gateau" onclick="toggleExpansion(event, this.id)"">
+				<!-- <div class="HomeGallery-thumbnail inactive" id="HomeGallery-gateau" onclick="toggleExpansion(event, this.id)">
 					<div class="HomeGallery-thumbnail">
 						<div class="HomeGallery-gateauImage"></div>
 						<div class="HomeGallery-gateauGif"></div>
@@ -35,16 +37,20 @@
 					<div class="HomeGallery-text">
 						<p class="HomeGallery-title">Gâteau</p>
 						<p class="HomeGallery-description">Designing a wedding<br />cake finder app fit for royalty</p>
-						<a href="http://karleee.com/gateau">
-							<button class="HomeGallery-button">See more ></button>
-						</a>
+						<a class="SeeMore" href="gateau.html">See more ></a>
+					</div>
+				</div> -->
+				<div class="HomeGallery-thumbnail inactive" id="HomeGallery-booVoyage" onclick="toggleExpansion(event, this.id)">
+					<div class="HomeGallery-thumbnail">
+						<div class="HomeGallery-booVoyageImage"></div>
+						<div class="HomeGallery-booVoyageGif"></div>
+					</div>
+					<div class="HomeGallery-text">
+						<p class="HomeGallery-title">BooVoyage</p>
+						<p class="HomeGallery-description">Designing an app for ghosties in search of<br />their next home</p>
+						<a class="SeeMore" href="booVoyage.html">See more ></a>
 					</div>
 				</div>
-				<div class="HomeGallery-thumbnail"></div>
 			</div>
-
-			<!-- Particle mouse trails -->
-			<!-- <script src="assets/js/sketch.js"></script>
-			<script src="assets/js/particles.js"></script> -->
 	</body>
 </html>

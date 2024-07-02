@@ -1,18 +1,23 @@
 // Function to add a new class when li is clicked
 function toggleExpansion(e, id) {
-  e.preventDefault();
+  const className = e.target.className;
 
-  const thumbnail = document.getElementById(`${id}`);
+  // Ignore toggling if user clicks on the "See More" link
+  if (className !== 'SeeMore') {
+    e.preventDefault();
 
-  // Turning Node list from DOM into normal array
-  const classes = [...thumbnail.classList];
+    const thumbnail = document.getElementById(`${id}`);
 
-  // Toggling active classses on expanded elements
-  if (classes.includes('active')) {
-    thumbnail.classList.remove('active');
-    thumbnail.classList.add('inactive');
-  } else {
-    thumbnail.classList.remove('inactive');
-    thumbnail.classList.add('active');
+    // Turning Node list from DOM into normal array
+    const classes = [...thumbnail.classList];
+
+    // Toggling active classses on expanded elements
+    if (classes.includes('active')) {
+      thumbnail.classList.remove('active');
+      thumbnail.classList.add('inactive');
+    } else {
+      thumbnail.classList.remove('inactive');
+      thumbnail.classList.add('active');
+    }
   }
 }
