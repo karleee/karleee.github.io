@@ -1,0 +1,50 @@
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 9vw;
+}
+
+.Gallery-thumbnail {
+  width: 20vw;
+  height: 20vw;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border: 1px solid black;
+}
+
+.Gallery-image {
+  width: 100%;
+  height: 100%;
+}
+
+.PointLobos {
+  content: url('../../images/traveling/point-lobos.jpg');
+}
+
+.LosAngeles {
+  content: url('../../images/traveling/los-angeles.jpg');
+}
+
+.SanLuisObispo {
+  content: url('../../images/traveling/san-luis-obispo.jpg')
+}
+
+.Hawaii {
+  content: url('../../images/traveling/hawaii.jpg')
+}
+
+.Portland {
+  content: url('../../images/traveling/portland.jpg')
+}
+
+.Tokyo {
+  content: url('../../images/traveling/tokyo.jpg')
+}
+
+.Pacifica {
+  content: url('../../images/traveling/pacifica.jpg')
+}
+
+.HalfMoonBay {
+  content: url('../../images/traveling/half-moon-bay.jpg')
+}

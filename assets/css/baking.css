@@ -1,0 +1,50 @@
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 9vw;
+}
+
+.Gallery-thumbnail {
+  width: 20vw;
+  height: 20vw;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border: 1px solid black;
+}
+
+.Gallery-image {
+  width: 100%;
+  height: 100%;
+}
+
+.EggTart {
+  content: url('../../images/baking/egg-tart.jpg');
+}
+
+.RedBean {
+  content: url('../../images/baking/red-bean.jpg');
+}
+
+.MatchaCookie {
+  content: url('../../images/baking/matcha-cookie.jpg')
+}
+
+.BlackSesameCookie {
+  content: url('../../images/baking/black-sesame-cookie.jpg')
+}
+
+.GuavaCake {
+  content: url('../../images/baking/guava-cake.jpg')
+}
+
+.MangoPudding {
+  content: url('../../images/baking/mango-pudding.jpg')
+}
+
+.GuavaMooncake {
+  content: url('../../images/baking/guava-mooncake.jpg')
+}
+
+.PineappleCake {
+  content: url('../../images/baking/pineapple-cake.jpg')
+}
