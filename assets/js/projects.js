@@ -21,3 +21,10 @@ function toggleExpansion(e, id) {
     }
   }
 }
+
+// Function to scroll to a specific element by id
+function scrollToElement(elementId) {
+  var el = document.getElementById(elementId);
+  console.log(el);
+  el.scrollIntoView({ block: 'end', behavior: 'smooth' });
+}
